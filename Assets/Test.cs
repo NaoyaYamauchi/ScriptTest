@@ -21,8 +21,8 @@ public class Boss
         else
         {
             //Magic関数内でmpを5減らし、コンソールに「魔法攻撃をした。残りMPは〇〇。」と表示してください。
-            Debug.Log("魔法攻撃をした。残りMPは" + this.mp + "。");
             this.mp -= 5;
+            Debug.Log("魔法攻撃をした。残りMPは" + this.mp + "。");
         }
 
     }
@@ -64,7 +64,7 @@ public class Test : MonoBehaviour {
         //Magic関数を呼び出して、魔法を使ってください
         lastboss.Magic();
         //Magic関数を10回使った後に、更にMagic関数を呼び出すと、mpが足りないメッセージが表示されることを確認してください
-        for(int i = 0; i <= 10; i++)
+        for(int i = 0; i < 10; i++)
         {
             lastboss.Magic();
         }
